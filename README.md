@@ -4,6 +4,8 @@ The BrowserViewController is a boilerplate class that handles opening a web page
 
 The icons were generously contributed by [Joseph Wain]("http://http://penandthink.com/") of [Glyphish]("http://glyphish.com") for this project.
 
+![Screenshot 1](http://nathanbuggia.com/wp-content/uploads/2011/10/Browser-View-Controller-1.png) ![Screenshot 2](http://nathanbuggia.com/wp-content/uploads/2011/10/Browser-View-Controller.png)
+
 ##QUICK START GUIDE
 This boiler plate code support these 3 common scenarios:
 ###UIButton or UITableView

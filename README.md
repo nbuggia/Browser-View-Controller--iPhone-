@@ -2,9 +2,9 @@
 ##OVERVIEW
 The BrowserViewController is a boilerplate class that handles opening a web page from within your application. This allows you to create a smooth experience within your app for loading web content and then seamlessly getting back into you app.
 
-The icons were generously contributed by [Joseph Wain]("http://http://penandthink.com/") of [Glyphish]("http://glyphish.com") for this project.
+The icons were generously contributed by [Joseph Wain]("http://penandthink.com/") of [Glyphish]("http://glyphish.com") for this project.
 
-![Screenshot 1](http://nathanbuggia.com/wp-content/uploads/2011/10/Browser-View-Controller-1.png) ![Screenshot 2](http://nathanbuggia.com/wp-content/uploads/2011/10/Browser-View-Controller.png)
+![Screenshot 1](http://nathanbuggia.com/wp-content/uploads/2011/10/Browser-View-Controller-1.png)![Screenshot 2](http://nathanbuggia.com/wp-content/uploads/2011/10/Browser-View-Controller.png)
 
 ##QUICK START GUIDE
 This boiler plate code support these 3 common scenarios:

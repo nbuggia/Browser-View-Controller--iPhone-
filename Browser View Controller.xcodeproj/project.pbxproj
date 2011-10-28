@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D85043D014390A41000BA1F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85043CF14390A41000BA1F0 /* UIKit.framework */; };
+		D85043D214390A41000BA1F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85043D114390A41000BA1F0 /* Foundation.framework */; };
+		D85043D414390A41000BA1F0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85043D314390A41000BA1F0 /* CoreGraphics.framework */; };
+		D8CA65B0145A25CB000383DA /* Browser_View_ControllerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CA65AF145A25CB000383DA /* Browser_View_ControllerAppDelegate.m */; };
+		D8CA65B3145A25E1000383DA /* Read Me in Resources */ = {isa = PBXBuildFile; fileRef = D8CA65B2145A25E1000383DA /* Read Me */; };
+		D8CA65B5145A25EE000383DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CA65B4145A25EE000383DA /* main.m */; };
+		D8CA65B8145A25FB000383DA /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = D8CA65B6145A25FB000383DA /* left.png */; };
+		D8CA65B9145A25FB000383DA /* left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8CA65B7145A25FB000383DA /* left@2x.png */; };
+		D8CA65BC145A2604000383DA /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = D8CA65BA145A2604000383DA /* right.png */; };
+		D8CA65BD145A2604000383DA /* right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8CA65BB145A2604000383DA /* right@2x.png */; };
+		D8CA65C0145A2619000383DA /* MyApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CA65BF145A2619000383DA /* MyApplication.m */; };
+		D8CA65C4145A2628000383DA /* BrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CA65C2145A2628000383DA /* BrowserViewController.m */; };
+		D8CA65C5145A2628000383DA /* BrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8CA65C3145A2628000383DA /* BrowserViewController.xib */; };
+		D8CA65C7145A2653000383DA /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8CA65C6145A2653000383DA /* MainWindow.xib */; };
+		D8CA65CB145A2661000383DA /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CA65C9145A2661000383DA /* RootViewController.m */; };
+		D8CA65CC145A2661000383DA /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8CA65CA145A2661000383DA /* RootViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D85043CB14390A41000BA1F0 /* Browser View Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Browser View Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D85043CF14390A41000BA1F0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D85043D114390A41000BA1F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D85043D314390A41000BA1F0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D8CA65AE145A25CB000383DA /* Browser_View_ControllerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Browser_View_ControllerAppDelegate.h; path = "Browser Demo/Browser_View_ControllerAppDelegate.h"; sourceTree = SOURCE_ROOT; };
+		D8CA65AF145A25CB000383DA /* Browser_View_ControllerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Browser_View_ControllerAppDelegate.m; path = "Browser Demo/Browser_View_ControllerAppDelegate.m"; sourceTree = SOURCE_ROOT; };
+		D8CA65B2145A25E1000383DA /* Read Me */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Read Me"; path = "Browser Demo/BrowserViewController (Copy to your App)/Read Me"; sourceTree = "<group>"; };
+		D8CA65B4145A25EE000383DA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Browser Demo/main.m"; sourceTree = "<group>"; };
+		D8CA65B6145A25FB000383DA /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = left.png; path = "Browser Demo/BrowserViewController (Copy to your App)/left.png"; sourceTree = SOURCE_ROOT; };
+		D8CA65B7145A25FB000383DA /* left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "left@2x.png"; path = "Browser Demo/BrowserViewController (Copy to your App)/left@2x.png"; sourceTree = SOURCE_ROOT; };
+		D8CA65BA145A2604000383DA /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = right.png; path = "Browser Demo/BrowserViewController (Copy to your App)/right.png"; sourceTree = SOURCE_ROOT; };
+		D8CA65BB145A2604000383DA /* right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "right@2x.png"; path = "Browser Demo/BrowserViewController (Copy to your App)/right@2x.png"; sourceTree = SOURCE_ROOT; };
+		D8CA65BE145A2619000383DA /* MyApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyApplication.h; path = "Browser Demo/BrowserViewController (Copy to your App)/MyApplication.h"; sourceTree = SOURCE_ROOT; };
+		D8CA65BF145A2619000383DA /* MyApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyApplication.m; path = "Browser Demo/BrowserViewController (Copy to your App)/MyApplication.m"; sourceTree = SOURCE_ROOT; };
+		D8CA65C1145A2628000383DA /* BrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrowserViewController.h; path = "Browser Demo/BrowserViewController (Copy to your App)/BrowserViewController.h"; sourceTree = SOURCE_ROOT; };
+		D8CA65C2145A2628000383DA /* BrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrowserViewController.m; path = "Browser Demo/BrowserViewController (Copy to your App)/BrowserViewController.m"; sourceTree = SOURCE_ROOT; };
+		D8CA65C3145A2628000383DA /* BrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BrowserViewController.xib; path = "Browser Demo/BrowserViewController (Copy to your App)/BrowserViewController.xib"; sourceTree = SOURCE_ROOT; };
+		D8CA65C6145A2653000383DA /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = "Browser Demo/MainWindow.xib"; sourceTree = SOURCE_ROOT; };
+		D8CA65C8145A2661000383DA /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = "Browser Demo/RootViewController.h"; sourceTree = SOURCE_ROOT; };
+		D8CA65C9145A2661000383DA /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = "Browser Demo/RootViewController.m"; sourceTree = SOURCE_ROOT; };
+		D8CA65CA145A2661000383DA /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RootViewController.xib; path = "Browser Demo/RootViewController.xib"; sourceTree = SOURCE_ROOT; };
+		D8CA65CE145A2671000383DA /* Browser View Controller-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Browser View Controller-Prefix.pch"; path = "Browser Demo/Browser View Controller-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		D8CA65D3145A282F000383DA /* Browser View Controller-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Browser View Controller-Info.plist"; path = "Browser Demo/Browser View Controller-Info.plist"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D85043C814390A41000BA1F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D85043D014390A41000BA1F0 /* UIKit.framework in Frameworks */,
+				D85043D214390A41000BA1F0 /* Foundation.framework in Frameworks */,
+				D85043D414390A41000BA1F0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D85043C014390A41000BA1F0 = {
+			isa = PBXGroup;
+			children = (
+				D8CA65B2145A25E1000383DA /* Read Me */,
+				D8CA65B4145A25EE000383DA /* main.m */,
+				D85043EF14390A81000BA1F0 /* Browser View Controller Boilerplate */,
+				D85043D514390A41000BA1F0 /* Demo Harness */,
+			);
+			sourceTree = "<group>";
+		};
+		D85043CC14390A41000BA1F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D85043CB14390A41000BA1F0 /* Browser View Controller.app */,
+			);
+			name = Products;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D85043CE14390A41000BA1F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D85043CF14390A41000BA1F0 /* UIKit.framework */,
+				D85043D114390A41000BA1F0 /* Foundation.framework */,
+				D85043D314390A41000BA1F0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D85043D514390A41000BA1F0 /* Demo Harness */ = {
+			isa = PBXGroup;
+			children = (
+				D8CA65AE145A25CB000383DA /* Browser_View_ControllerAppDelegate.h */,
+				D8CA65AF145A25CB000383DA /* Browser_View_ControllerAppDelegate.m */,
+				D8CA65C6145A2653000383DA /* MainWindow.xib */,
+				D8CA65C8145A2661000383DA /* RootViewController.h */,
+				D8CA65C9145A2661000383DA /* RootViewController.m */,
+				D8CA65CA145A2661000383DA /* RootViewController.xib */,
+				D85043D614390A41000BA1F0 /* Supporting Files */,
+				D85043CC14390A41000BA1F0 /* Products */,
+			);
+			name = "Demo Harness";
+			path = "Browser View Controller";
+			sourceTree = "<group>";
+		};
+		D85043D614390A41000BA1F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8CA65CE145A2671000383DA /* Browser View Controller-Prefix.pch */,
+				D8CA65D3145A282F000383DA /* Browser View Controller-Info.plist */,
+				D85043CE14390A41000BA1F0 /* Frameworks */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D85043EF14390A81000BA1F0 /* Browser View Controller Boilerplate */ = {
+			isa = PBXGroup;
+			children = (
+				D8CA65C1145A2628000383DA /* BrowserViewController.h */,
+				D8CA65C2145A2628000383DA /* BrowserViewController.m */,
+				D8CA65C3145A2628000383DA /* BrowserViewController.xib */,
+				D8CA65BE145A2619000383DA /* MyApplication.h */,
+				D8CA65BF145A2619000383DA /* MyApplication.m */,
+				D8CA65D0145A269A000383DA /* icons */,
+			);
+			name = "Browser View Controller Boilerplate";
+			path = "Browser View Controller";
+			sourceTree = "<group>";
+		};
+		D8CA65D0145A269A000383DA /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				D8CA65B6145A25FB000383DA /* left.png */,
+				D8CA65B7145A25FB000383DA /* left@2x.png */,
+				D8CA65BA145A2604000383DA /* right.png */,
+				D8CA65BB145A2604000383DA /* right@2x.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D85043CA14390A41000BA1F0 /* Browser View Controller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D85043EC14390A41000BA1F0 /* Build configuration list for PBXNativeTarget "Browser View Controller" */;
+			buildPhases = (
+				D85043C714390A41000BA1F0 /* Sources */,
+				D85043C814390A41000BA1F0 /* Frameworks */,
+				D85043C914390A41000BA1F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Browser View Controller";
+			productName = "Browser View Controller";
+			productReference = D85043CB14390A41000BA1F0 /* Browser View Controller.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D85043C214390A41000BA1F0 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = D85043C514390A41000BA1F0 /* Build configuration list for PBXProject "Browser View Controller" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D85043C014390A41000BA1F0;
+			productRefGroup = D85043CC14390A41000BA1F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D85043CA14390A41000BA1F0 /* Browser View Controller */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D85043C914390A41000BA1F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8CA65B3145A25E1000383DA /* Read Me in Resources */,
+				D8CA65B8145A25FB000383DA /* left.png in Resources */,
+				D8CA65B9145A25FB000383DA /* left@2x.png in Resources */,
+				D8CA65BC145A2604000383DA /* right.png in Resources */,
+				D8CA65BD145A2604000383DA /* right@2x.png in Resources */,
+				D8CA65C5145A2628000383DA /* BrowserViewController.xib in Resources */,
+				D8CA65C7145A2653000383DA /* MainWindow.xib in Resources */,
+				D8CA65CC145A2661000383DA /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D85043C714390A41000BA1F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8CA65B0145A25CB000383DA /* Browser_View_ControllerAppDelegate.m in Sources */,
+				D8CA65B5145A25EE000383DA /* main.m in Sources */,
+				D8CA65C0145A2619000383DA /* MyApplication.m in Sources */,
+				D8CA65C4145A2628000383DA /* BrowserViewController.m in Sources */,
+				D8CA65CB145A2661000383DA /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D85043EA14390A41000BA1F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D85043EB14390A41000BA1F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D85043ED14390A41000BA1F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Browser Demo/Browser View Controller-Prefix.pch";
+				INFOPLIST_FILE = "Browser Demo/Browser View Controller-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D85043EE14390A41000BA1F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Browser Demo/Browser View Controller-Prefix.pch";
+				INFOPLIST_FILE = "Browser Demo/Browser View Controller-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D85043C514390A41000BA1F0 /* Build configuration list for PBXProject "Browser View Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D85043EA14390A41000BA1F0 /* Debug */,
+				D85043EB14390A41000BA1F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D85043EC14390A41000BA1F0 /* Build configuration list for PBXNativeTarget "Browser View Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D85043ED14390A41000BA1F0 /* Debug */,
+				D85043EE14390A41000BA1F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D85043C214390A41000BA1F0 /* Project object */;
+}

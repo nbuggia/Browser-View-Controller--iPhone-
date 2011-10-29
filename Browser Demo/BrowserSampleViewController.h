@@ -1,5 +1,5 @@
 //
-//  MyApplication.h
+//  BrowserSampleViewController.h
 //
 //  This software is licensed under the MIT Software License
 //
@@ -24,13 +24,22 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Browser_View_ControllerAppDelegate.h"
+#import "BrowserViewController.h"
 
+#define DEMO_URL    @"http://nytimes.com"
 
-@interface MyApplication : UIApplication
+@interface BrowserSampleViewController : UIViewController
+<UIWebViewDelegate>
+{
+    IBOutlet UIWebView *webView;
+    IBOutlet UIButton *button;
+    IBOutlet UITextView *textView;
+}
 
--(BOOL)openURL:(NSURL *)url;
+@property (nonatomic, retain) UIWebView *webView;
+@property (nonatomic, retain) UIButton *button;
+@property (nonatomic, retain) UITextView *textView;
 
--(BOOL)openURL:(NSURL *)url forceOpenInSafari:(BOOL)forceOpenInSafari;
+- (IBAction)openLinkInBrowser:(id)sender;
 
 @end

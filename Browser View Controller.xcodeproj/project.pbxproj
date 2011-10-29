@@ -20,9 +20,9 @@
 		D8CA65C4145A2628000383DA /* BrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CA65C2145A2628000383DA /* BrowserViewController.m */; };
 		D8CA65C5145A2628000383DA /* BrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8CA65C3145A2628000383DA /* BrowserViewController.xib */; };
 		D8CA65C7145A2653000383DA /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8CA65C6145A2653000383DA /* MainWindow.xib */; };
-		D8CA65CB145A2661000383DA /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CA65C9145A2661000383DA /* RootViewController.m */; };
-		D8CA65CC145A2661000383DA /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8CA65CA145A2661000383DA /* RootViewController.xib */; };
-		D8F3364A145A4A8B0017FFE2 /* README in Resources */ = {isa = PBXBuildFile; fileRef = D8F33649145A4A8B0017FFE2 /* README */; };
+		D8CA65CB145A2661000383DA /* BrowserSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CA65C9145A2661000383DA /* BrowserSampleViewController.m */; };
+		D8CA65CC145A2661000383DA /* BrowserSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8CA65CA145A2661000383DA /* BrowserSampleViewController.xib */; };
+		D8D42F10145BCA7400D93CC5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D8D42F0F145BCA7400D93CC5 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,12 +43,12 @@
 		D8CA65C2145A2628000383DA /* BrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrowserViewController.m; path = "Browser Demo/BrowserViewController (Copy to your App)/BrowserViewController.m"; sourceTree = SOURCE_ROOT; };
 		D8CA65C3145A2628000383DA /* BrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BrowserViewController.xib; path = "Browser Demo/BrowserViewController (Copy to your App)/BrowserViewController.xib"; sourceTree = SOURCE_ROOT; };
 		D8CA65C6145A2653000383DA /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = "Browser Demo/MainWindow.xib"; sourceTree = SOURCE_ROOT; };
-		D8CA65C8145A2661000383DA /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = "Browser Demo/RootViewController.h"; sourceTree = SOURCE_ROOT; };
-		D8CA65C9145A2661000383DA /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = "Browser Demo/RootViewController.m"; sourceTree = SOURCE_ROOT; };
-		D8CA65CA145A2661000383DA /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RootViewController.xib; path = "Browser Demo/RootViewController.xib"; sourceTree = SOURCE_ROOT; };
+		D8CA65C8145A2661000383DA /* BrowserSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrowserSampleViewController.h; path = "Browser Demo/BrowserSampleViewController.h"; sourceTree = SOURCE_ROOT; };
+		D8CA65C9145A2661000383DA /* BrowserSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrowserSampleViewController.m; path = "Browser Demo/BrowserSampleViewController.m"; sourceTree = SOURCE_ROOT; };
+		D8CA65CA145A2661000383DA /* BrowserSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BrowserSampleViewController.xib; path = "Browser Demo/BrowserSampleViewController.xib"; sourceTree = SOURCE_ROOT; };
 		D8CA65CE145A2671000383DA /* Browser View Controller-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Browser View Controller-Prefix.pch"; path = "Browser Demo/Browser View Controller-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		D8CA65D3145A282F000383DA /* Browser View Controller-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Browser View Controller-Info.plist"; path = "Browser Demo/Browser View Controller-Info.plist"; sourceTree = SOURCE_ROOT; };
-		D8F33649145A4A8B0017FFE2 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		D8D42F0F145BCA7400D93CC5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 		D85043C014390A41000BA1F0 = {
 			isa = PBXGroup;
 			children = (
-				D8F33649145A4A8B0017FFE2 /* README */,
+				D8D42F0F145BCA7400D93CC5 /* README.md */,
 				D8CA65B4145A25EE000383DA /* main.m */,
 				D85043EF14390A81000BA1F0 /* Browser View Controller Boilerplate */,
 				D85043D514390A41000BA1F0 /* Demo Harness */,
@@ -101,9 +101,9 @@
 				D8CA65AE145A25CB000383DA /* Browser_View_ControllerAppDelegate.h */,
 				D8CA65AF145A25CB000383DA /* Browser_View_ControllerAppDelegate.m */,
 				D8CA65C6145A2653000383DA /* MainWindow.xib */,
-				D8CA65C8145A2661000383DA /* RootViewController.h */,
-				D8CA65C9145A2661000383DA /* RootViewController.m */,
-				D8CA65CA145A2661000383DA /* RootViewController.xib */,
+				D8CA65C8145A2661000383DA /* BrowserSampleViewController.h */,
+				D8CA65C9145A2661000383DA /* BrowserSampleViewController.m */,
+				D8CA65CA145A2661000383DA /* BrowserSampleViewController.xib */,
 				D85043D614390A41000BA1F0 /* Supporting Files */,
 				D85043CC14390A41000BA1F0 /* Products */,
 			);
@@ -199,8 +199,8 @@
 				D8CA65BD145A2604000383DA /* right@2x.png in Resources */,
 				D8CA65C5145A2628000383DA /* BrowserViewController.xib in Resources */,
 				D8CA65C7145A2653000383DA /* MainWindow.xib in Resources */,
-				D8CA65CC145A2661000383DA /* RootViewController.xib in Resources */,
-				D8F3364A145A4A8B0017FFE2 /* README in Resources */,
+				D8CA65CC145A2661000383DA /* BrowserSampleViewController.xib in Resources */,
+				D8D42F10145BCA7400D93CC5 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +215,7 @@
 				D8CA65B5145A25EE000383DA /* main.m in Sources */,
 				D8CA65C0145A2619000383DA /* MyApplication.m in Sources */,
 				D8CA65C4145A2628000383DA /* BrowserViewController.m in Sources */,
-				D8CA65CB145A2661000383DA /* RootViewController.m in Sources */,
+				D8CA65CB145A2661000383DA /* BrowserSampleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

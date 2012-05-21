@@ -146,6 +146,35 @@
     // page title
     NSString *pageTitle = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"];
     if(pageTitle) [[self navigationItem] setTitle:pageTitle];
+    
+    
+    // If there is a navigation controller, take up the same style for the toolbar.
+    if (self.navigationController) {
+        self.toolbar.barStyle = self.navigationController.navigationBar.barStyle;
+        self.toolbar.tintColor = self.navigationController.navigationBar.tintColor;
+        
+        // iOS5 specific part
+        if ([self.navigationController.navigationBar respondsToSelector:@selector(backgroundImageForBarMetrics:)]) {
+            if ([self.navigationController.navigationBar backgroundImageForBarMetrics:UIBarMetricsDefault]) {
+                [self.toolbar setBackgroundImage:[self.navigationController.navigationBar backgroundImageForBarMetrics:UIBarMetricsDefault] 
+                              forToolbarPosition:UIToolbarPositionAny
+                                      barMetrics:UIBarMetricsDefault];
+                
+            }
+            
+            if ([self.navigationController.navigationBar backgroundImageForBarMetrics:UIBarMetricsLandscapePhone]) {
+                [self.toolbar setBackgroundImage:[self.navigationController.navigationBar backgroundImageForBarMetrics:UIBarMetricsLandscapePhone] 
+                              forToolbarPosition:UIToolbarPositionAny
+                                      barMetrics:UIBarMetricsLandscapePhone];
+                
+            }
+
+        }
+        
+        
+        
+        
+    }
 }
 
 

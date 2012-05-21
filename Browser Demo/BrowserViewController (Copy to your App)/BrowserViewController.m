@@ -109,6 +109,9 @@
         self.actionButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
                                                                           target:self
                                                                           action:@selector(actionButtonPressed:)];
+		
+        // Hide tab bars / toolbars etc
+        self.hidesBottomBarWhenPushed = YES;
     }
     
     return self;

@@ -152,18 +152,23 @@
     if (self.navigationController) {
         self.toolbar.barStyle = self.navigationController.navigationBar.barStyle;
         self.toolbar.tintColor = self.navigationController.navigationBar.tintColor;
-        if ([self.navigationController.navigationBar backgroundImageForBarMetrics:UIBarMetricsDefault]) {
-            [self.toolbar setBackgroundImage:[self.navigationController.navigationBar backgroundImageForBarMetrics:UIBarMetricsDefault] 
-                          forToolbarPosition:UIToolbarPositionAny
-                                  barMetrics:UIBarMetricsDefault];
-            
-        }
         
-        if ([self.navigationController.navigationBar backgroundImageForBarMetrics:UIBarMetricsLandscapePhone]) {
-            [self.toolbar setBackgroundImage:[self.navigationController.navigationBar backgroundImageForBarMetrics:UIBarMetricsLandscapePhone] 
-                          forToolbarPosition:UIToolbarPositionAny
-                                  barMetrics:UIBarMetricsLandscapePhone];
+        // iOS5 specific part
+        if ([self.navigationController.navigationBar respondsToSelector:@selector(backgroundImageForBarMetrics:)]) {
+            if ([self.navigationController.navigationBar backgroundImageForBarMetrics:UIBarMetricsDefault]) {
+                [self.toolbar setBackgroundImage:[self.navigationController.navigationBar backgroundImageForBarMetrics:UIBarMetricsDefault] 
+                              forToolbarPosition:UIToolbarPositionAny
+                                      barMetrics:UIBarMetricsDefault];
+                
+            }
             
+            if ([self.navigationController.navigationBar backgroundImageForBarMetrics:UIBarMetricsLandscapePhone]) {
+                [self.toolbar setBackgroundImage:[self.navigationController.navigationBar backgroundImageForBarMetrics:UIBarMetricsLandscapePhone] 
+                              forToolbarPosition:UIToolbarPositionAny
+                                      barMetrics:UIBarMetricsLandscapePhone];
+                
+            }
+
         }
         
         

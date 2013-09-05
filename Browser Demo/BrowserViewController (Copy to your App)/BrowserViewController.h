@@ -25,7 +25,14 @@
 
 
 #import <UIKit/UIKit.h>
-#import "MyApplication.h"
+
+@interface UIApplication(Browser)
+-(BOOL)openURL:(NSURL *)url forceOpenInSafari:(BOOL)forceOpenInSafari;
+@end
+
+@protocol BrowserViewDelegate <NSObject>
+- (BOOL)openURL:(NSURL*)url;
+@end
 
 // The names of the images for the 'back' and 'forward' buttons in the toolbar.
 #define PNG_BUTTON_FORWARD @"right.png"

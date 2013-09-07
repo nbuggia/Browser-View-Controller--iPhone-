@@ -26,6 +26,47 @@
 
 #import "BrowserViewController.h"
 
+@implementation UIApplication(Browser)
+
+-(BOOL)openURL:(NSURL *)url forceOpenInSafari:(BOOL)forceOpenInSafari
+{
+    if(forceOpenInSafari)
+    {
+        // We're overriding our app trying to open this URL, so we'll let UIApplication federate this request back out
+        //  through the normal channels. The return value states whether or not they were able to open the URL.
+        return [self openURL:url];
+    }
+    
+    //
+    // Otherwise, we'll see if it is a request that we should let our app open.
+    
+    BOOL couldWeOpenUrl = NO;
+    
+    NSString* scheme = [url.scheme lowercaseString];
+    if([scheme compare:@"http"] == NSOrderedSame
+       || [scheme compare:@"https"] == NSOrderedSame)
+    {
+        // TODO - Here you might also want to check for other conditions where you do not want your app opening URLs (e.g.
+        //  Facebook authentication requests, OAUTH requests, etc)
+        
+        // TODO - Update the cast below with the name of your AppDelegate
+        // Let's call the method you wrote on your AppDelegate to actually open the BrowserViewController
+        couldWeOpenUrl = [(id<BrowserViewDelegate>)self.delegate openURL:url];
+    }
+    
+    if(!couldWeOpenUrl)
+    {
+        return [self openURL:url];
+    }
+    else
+    {
+        return YES;
+    }
+}
+@end
+
+
+
 @implementation BrowserViewController
 
 @synthesize webView;
@@ -49,7 +90,7 @@
     // user pressed "Open in Safari"
     if([[uias buttonTitleAtIndex:buttonIndex] compare:ACTION_OPEN_IN_SAFARI] == NSOrderedSame)
     {
-        [(MyApplication*)[UIApplication sharedApplication] openURL:self.url forceOpenInSafari:YES];
+        [[UIApplication sharedApplication] openURL:self.url forceOpenInSafari:YES];
     }
     
     // TODO add your own actions here, like email the URL.
@@ -58,23 +99,6 @@
 
 /**********************************************************************************************************************/
 #pragma mark - Object lifecycle
-
-
-- (void)dealloc
-{
-    [webView setDelegate:nil];
-    [webView release];
-    [url release];
-    [activityIndicator release];
-    
-    [forwardButton release];
-    [backButton release];
-    [stopButton release];
-    [reloadButton release];
-    [actionButton release];
-
-    [super dealloc];
-}
 
 
 - (id)initWithUrls:(NSURL*)u
@@ -140,8 +164,6 @@
     if([activityIndicator isAnimating]) [toolbarButtons replaceObjectAtIndex:4 withObject:self.stopButton];
     
     [self.toolbar setItems:toolbarButtons animated:YES];
-    [toolbarButtons release];
-    [flexibleSpace release];
     
     // page title
     NSString *pageTitle = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"];
@@ -183,7 +205,7 @@
     [super viewDidLoad];
     
     self.webView.scalesPageToFit = YES;
-    self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithCustomView:activityIndicator] autorelease];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:activityIndicator];
     
     [self.webView loadRequest:[NSURLRequest requestWithURL:self.url]];
     [self updateToolbar];
@@ -248,7 +270,6 @@
                                              otherButtonTitles:ACTION_OPEN_IN_SAFARI, nil];
     
     [uias showInView:self.view];
-    [uias release];
 }
 
 

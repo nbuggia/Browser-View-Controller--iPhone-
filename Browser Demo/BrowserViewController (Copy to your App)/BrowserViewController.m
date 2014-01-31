@@ -276,6 +276,13 @@
 /**********************************************************************************************************************/
 #pragma mark - WebView Delegate
 
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    if ([self.delegate respondsToSelector:@selector(openURL:)]) {
+        return [self.delegate openURL:request.URL];
+    } else {
+        return YES;
+    }
+}
 
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {

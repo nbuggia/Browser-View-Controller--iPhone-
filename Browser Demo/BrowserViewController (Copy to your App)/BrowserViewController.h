@@ -68,6 +68,8 @@ UIActionSheetDelegate
     UIBarButtonItem *actionButton;
 }
 
+@property(nonatomic, weak) id<BrowserViewDelegate> delegate;
+
 @property(nonatomic, retain) NSURL *url;
 @property(nonatomic, retain) UIWebView *webView;
 @property(nonatomic, retain) UIToolbar *toolbar;
